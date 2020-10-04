@@ -487,9 +487,9 @@ Connection ~ 6650 1400
 Wire Wire Line
 	6650 1400 6900 1400
 Text Label 7100 3150 3    50   ~ 0
-D1p
+D1+
 Text Label 7200 3150 3    50   ~ 0
-D1m
+D1-
 Wire Wire Line
 	7200 3050 7200 3150
 $Comp
@@ -531,25 +531,25 @@ Connection ~ 10100 1400
 Wire Wire Line
 	8250 3050 8250 3150
 Text Label 8250 3150 3    50   ~ 0
-D2p
+D2+
 Text Label 8350 3150 3    50   ~ 0
-D2m
+D2-
 Wire Wire Line
 	8350 3050 8350 3150
 Wire Wire Line
 	9400 3050 9400 3150
 Text Label 9400 3150 3    50   ~ 0
-D3p
+D3+
 Text Label 9500 3150 3    50   ~ 0
-D3m
+D3-
 Wire Wire Line
 	9500 3050 9500 3150
 Wire Wire Line
 	10550 3050 10550 3150
 Text Label 10550 3150 3    50   ~ 0
-D4p
+D4+
 Text Label 10650 3150 3    50   ~ 0
-D4m
+D4-
 Wire Wire Line
 	10650 3050 10650 3150
 $Comp
@@ -613,21 +613,21 @@ Wire Wire Line
 Wire Wire Line
 	5600 3050 5950 3050
 Text Label 3050 1550 0    50   ~ 0
-D1p
+D1+
 Text Label 3050 1650 0    50   ~ 0
-D1m
+D1-
 Text Label 3050 1850 0    50   ~ 0
-D2p
+D2+
 Text Label 3050 1950 0    50   ~ 0
-D2m
+D2-
 Text Label 3050 2150 0    50   ~ 0
-D3p
+D3+
 Text Label 3050 2250 0    50   ~ 0
-D3m
+D3-
 Text Label 3050 2450 0    50   ~ 0
-D4p
+D4+
 Text Label 3050 2550 0    50   ~ 0
-D4m
+D4-
 Wire Wire Line
 	2650 1350 2700 1350
 Wire Wire Line
@@ -660,17 +660,17 @@ $EndComp
 Wire Wire Line
 	5500 1400 5750 1400
 Text Label 5950 3150 3    50   ~ 0
-DUp
+DU+
 Text Label 6050 3150 3    50   ~ 0
-DUm
+DU-
 Wire Wire Line
 	6050 3150 6050 3050
 Wire Wire Line
 	5950 3150 5950 3050
 Text Label 1650 1750 2    50   ~ 0
-DUp
+DU+
 Text Label 1650 1850 2    50   ~ 0
-DUm
+DU-
 Connection ~ 5750 1400
 $Comp
 L Device:LED_Small D4
