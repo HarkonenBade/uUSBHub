@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name uUSBHub)(type KiCad)(uri ${KIPRJMOD}/uUSBHub.pretty)(options "")(descr ""))
+)

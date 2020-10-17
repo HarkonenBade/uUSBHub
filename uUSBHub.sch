@@ -19,7 +19,7 @@ U 1 1 5F7357E6
 P 7100 1050
 F 0 "J2" V 6733 993 50  0000 C CNN
 F 1 "PORT1" V 6824 993 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 7250 1000 50  0001 C CNN
+F 2 "uUSBHub:JTJ-USB-AF-08" H 7250 1000 50  0001 C CNN
 F 3 " ~" H 7250 1000 50  0001 C CNN
 	1    7100 1050
 	0    -1   1    0   
@@ -30,7 +30,7 @@ U 1 1 5F739FF7
 P 8250 1050
 F 0 "J3" V 7883 993 50  0000 C CNN
 F 1 "PORT2" V 7974 993 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 8400 1000 50  0001 C CNN
+F 2 "uUSBHub:JTJ-USB-AF-08" H 8400 1000 50  0001 C CNN
 F 3 " ~" H 8400 1000 50  0001 C CNN
 	1    8250 1050
 	0    -1   1    0   
@@ -41,7 +41,7 @@ U 1 1 5F73A9AB
 P 9400 1050
 F 0 "J4" V 9033 993 50  0000 C CNN
 F 1 "PORT3" V 9124 993 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 9550 1000 50  0001 C CNN
+F 2 "uUSBHub:JTJ-USB-AF-08" H 9550 1000 50  0001 C CNN
 F 3 " ~" H 9550 1000 50  0001 C CNN
 	1    9400 1050
 	0    -1   1    0   
@@ -52,7 +52,7 @@ U 1 1 5F73B85F
 P 10550 1050
 F 0 "J5" V 10183 993 50  0000 C CNN
 F 1 "PORT4" V 10274 993 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 10700 1000 50  0001 C CNN
+F 2 "uUSBHub:JTJ-USB-AF-08" H 10700 1000 50  0001 C CNN
 F 3 " ~" H 10700 1000 50  0001 C CNN
 	1    10550 1050
 	0    -1   1    0   
@@ -263,7 +263,7 @@ F 1 "USBLC6-2SC6" H 10550 2850 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 10600 1900 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 10800 2750 50  0001 C CNN
 	1    10600 2400
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	10550 1350 10550 1850
@@ -313,7 +313,7 @@ F 1 "USBLC6-2SC6" H 7100 2850 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 7150 1900 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 7350 2750 50  0001 C CNN
 	1    7150 2400
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	6750 2300 6750 1850
@@ -552,17 +552,6 @@ Text Label 10650 3150 3    50   ~ 0
 D4-
 Wire Wire Line
 	10650 3050 10650 3150
-$Comp
-L Connector:USB_A J1
-U 1 1 5F752C62
-P 5950 1050
-F 0 "J1" V 5600 950 50  0000 L CNN
-F 1 "UPSTREAM" V 5700 900 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 6100 1000 50  0001 C CNN
-F 3 " ~" H 6100 1000 50  0001 C CNN
-	1    5950 1050
-	0    -1   1    0   
-$EndComp
 NoConn ~ 6350 950 
 $Comp
 L Power_Protection:USBLC6-2SC6 U1
@@ -1107,5 +1096,61 @@ F 3 "~" H 6350 1050 50  0001 C CNN
 	1    6350 1050
 	0    1    1    0   
 $EndComp
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 5F81299F
+P 5950 1050
+F 0 "J1" V 5583 993 50  0000 C CNN
+F 1 "USB_B_Micro" V 5674 993 50  0000 C CNN
+F 2 "uUSBHub:U254-051T-4BH83-F1S" H 6100 1000 50  0001 C CNN
+F 3 "~" H 6100 1000 50  0001 C CNN
+	1    5950 1050
+	0    -1   1    0   
+$EndComp
 Connection ~ 6350 1050
+NoConn ~ 6150 1350
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5F850554
+P 6250 7600
+F 0 "H4" H 6350 7646 50  0000 L CNN
+F 1 "MountingHole" H 6350 7555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580" H 6250 7600 50  0001 C CNN
+F 3 "~" H 6250 7600 50  0001 C CNN
+	1    6250 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5F852139
+P 6250 7400
+F 0 "H3" H 6350 7446 50  0000 L CNN
+F 1 "MountingHole" H 6350 7355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580" H 6250 7400 50  0001 C CNN
+F 3 "~" H 6250 7400 50  0001 C CNN
+	1    6250 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5F8522C0
+P 6250 7200
+F 0 "H2" H 6350 7246 50  0000 L CNN
+F 1 "MountingHole" H 6350 7155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580" H 6250 7200 50  0001 C CNN
+F 3 "~" H 6250 7200 50  0001 C CNN
+	1    6250 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5F8524E3
+P 6250 7000
+F 0 "H1" H 6350 7046 50  0000 L CNN
+F 1 "MountingHole" H 6350 6955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580" H 6250 7000 50  0001 C CNN
+F 3 "~" H 6250 7000 50  0001 C CNN
+	1    6250 7000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
